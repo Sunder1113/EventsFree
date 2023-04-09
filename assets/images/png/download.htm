@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="bg-image">
+        <div class="container overlay ">
+            <nav class="d-flex align-item-center space-between pt-3 ">
+                <div class="d-flex align-item-center">
+                    <img src="./assets/images/png/image1.png" alt="logo">
+                    <img src="./assets/images/png/EventsFree.png" alt="EventsFree">
+                </div>
+
+                <ul class="d-flex gap-4">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">FEED</a></li>
+                    <li><a href="#">USER NAME</a></li>
+                    <button><a href="#">Log out</a></button>
+                </ul>
+            </nav>
+            <div>
+                <h1>Sed tortor in quisque morbi scelerisque etiam eu.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit.
+                    Suspendisse maximus
+                    ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id
+                    suscipit cursus,</p>
+                <button><a href="#">Get Started</a></button>
+                <button><a href="#"> Learn more</a></button>
+            </div>
+
+            <div class="row d-flex align-item-center   iconbox ">
+                <div class="col_3 border_right d-flex justify-center align-item-center">
+                    <img src="./assets/images/png/Group.png" alt="location">
+                    <div class="ml-3">
+                        <h3>Location</h3>
+                        <p>Search by city</p>
+                    </div>
+                </div>
+                <div class="col_3 d-flex border_right justify-center align-item-center">
+                    <img src="./assets/images/png/Vector.png" alt="vector">
+                    <div class="ml-3">
+                        <h3>Date</h3>
+                        <p>09/23/2021</p>
+                    </div>
+                </div>
+                <div class="col_3 d-flex border_right justify-center align-item-center">
+                    <img src="./assets/images/png/akar-icons_people-group.png" alt="vector">
+                    <div class="ml-3">
+                        <h3>Capicity</h3>
+                        <p>Search by city</p>
+                    </div>
+                </div>
+                <div class="col_3 d-flex justify-center">
+                    <button class="go_check"><a href="#">GO CHECK</a></button>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>

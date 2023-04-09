@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.d-sm-flex {
+    display: flex;
+}
+
+
+@media(max-width:576px) {
+    .d-sm-flex {
+        display: block;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+@media(max-width: 992px) {}
