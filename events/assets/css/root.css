@@ -1,0 +1,159 @@
+:root {
+    /* font-size */
+    --fs-xm: 14px;
+    --fs-sm: 16px;
+    --fs-md: 20px;
+    --fs-lg: 25px;
+    --fs-xl: 35px;
+    --fs-2xl: 48px;
+    --fs-3xl: 64px;
+
+
+    /* font-weight */
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+
+    /* font-color */
+
+    --text-white: #ffffff;
+    --text-black: #000000b3;
+    --text-primery: #2C49FEBD;
+    --text-gray: #000000B2;
+
+    /* bg-color */
+    --bg-primery: #2C49FEBD;
+    --bg-white: white;
+
+
+    /* font-family */
+
+}
+
+/* font-size */
+
+.fs_xm {
+    font-size: var(--fs-xm);
+}
+
+.fs_sm {
+    font-size: var(--fs-sm);
+}
+
+.fs_md {
+    font-size: var(--fs-md);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_xl {
+    font-size: var(--fs-xl);
+}
+
+.fs_2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs_3xl {
+    font-size: var(--fs-3xl);
+}
+
+/* font-weight */
+.fw_normal {
+    font-weight: var(--fw-normal);
+}
+
+.fw_medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw_semibold {
+    font-weight: var(--fw-semibold);
+
+}
+
+.fw_bold {
+    font-weight: var(--fw-bold);
+}
+
+
+
+
+/* text-color */
+.text_black {
+    color: var(--text-black);
+
+}
+
+.text_primery {
+    color: var(--text-primery);
+}
+
+.text_white {
+    color: var(--text-white);
+}
+
+.text_gray {
+    color: var(--text-gray);
+}
+
+
+
+/* bg-color */
+
+.bg_primery {
+    background-color: var(--bg-primery);
+}
+
+.bg_white {
+    background-color: var(--bg-white);
+}
+
+
+@media (max-width: 1200px) {
+    :root {
+        /* font-size */
+
+        --fs-lg: 25px;
+        --fs-xl: 35px;
+        --fs-2xl: 48px;
+        --fs-3xl: 64px;
+    }
+}
+
+@media (max-width:992px) {
+    :root {
+        /* font-size */
+        --fs-xl: 34px;
+        --fs-2xl: 46px;
+        --fs-3xl: 56px;
+    }
+}
+
+@media (max-width:768px) {
+    :root {
+        /* font-size */
+
+        --fs-md: 20px;
+        --fs-lg: 24px;
+        --fs-xl: 32px;
+        --fs-2xl: 44px;
+        --fs-3xl: 48px;
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        /* font-size */
+
+        --fs-md: 18px;
+        --fs-lg: 22px;
+        --fs-xl: 28px;
+        --fs-2xl: 32px;
+        --fs-3xl: 42px;
+    }
+}
